@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Weather App</h1>
+    </div>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" class="weather-location">
+            <button class="search">Search</button>
+        </div>
+        <div class="display-weather">
+            <span class="city"></span>
+            <span class="country"></span>
+            <div class="display-condition">
+                <div class="display-icon">
+                    <img src="#" alt="weather-icon" class="condition-icon">
+                    <span class="condition-text"></span>
+                </div>
+                <p><span class="temp-c"></span>&deg;C / <span class="temp-f"></span>&deg;F</p>
+            </div>
+            <div class="feels-like">
+                Feels like <span class="feelslike-c"></span>&deg;C / <span class="feelslike-f"></span>&deg;F
+            </div>
+            <table>
+                <tr>
+                    <td>Wind:</td>
+                    <td class="wind"></td>
+                </tr>
+                <tr>
+                    <td>Humidity:</td>
+                    <td class="humidity"></td>
+                </tr>
+                <tr>
+                    <td>Precipitation:</td>
+                    <td class="precipitation"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

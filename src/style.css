@@ -1,0 +1,96 @@
+body, html {
+    margin: 0px;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0766AD;
+    color: white;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    background-color: #F3F3F3;
+}
+
+.display-weather {
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    visibility: hidden;
+    background-color: #83A2FF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+
+}
+
+.city {
+    font-size: 3rem;
+}
+
+.country {
+    font-size: 1.5rem;
+}
+
+.display-condition {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.display-condition p {
+    font-size: 2rem;
+}
+
+.display-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    margin-top: 30px;
+}
+
+td {
+    font-size: 1.5rem;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+.search {
+    background-color: #0766AD;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.search:hover {
+    opacity: 1;
+}
+
+.weather-location {
+    font-size: 1.5rem;
+}
