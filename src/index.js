@@ -41,7 +41,7 @@ async function displayWeather(weather) {
 }
 
 async function getWeather(location){
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=f2059bfb35224f35b34161322231311&q=${location}`, { mode: 'cors' })
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=f2059bfb35224f35b34161322231311&q=${location}`, { mode: 'cors' })
 
     if(response.status === 400) {
         alert('Please type a proper city name')
